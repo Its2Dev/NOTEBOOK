@@ -1,0 +1,91 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #5555d3;
+    color: #e5e3e9;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.app-container {
+    background: rgb(35, 34, 87);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Ensure inputs share the same box model */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.button:hover{
+    transform: translateY(-10px);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.notes-list {
+    margin-top: 20px;
+    min-height: 200px; 
+}
+
+.note-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.note-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #111;
+}
+
+.note-card p {
+    margin: 0 0 10px 0;
+    white-space: pre-wrap; /* Keeps line breaks from the textarea intact */
+    color: #444;
+}
+
+.empty-state {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}

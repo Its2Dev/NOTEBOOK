@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginated Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>My Notes</h1>
+        
+        <div class="input-section">
+            <input type="text" id="note-title" placeholder="Note Title (Optional)">
+            <textarea id="note-input" placeholder="Write your note content here...*"></textarea>
+            <button id="add-note-btn">Save Note</button>
+        </div>
+
+        <div id="notes-list" class="notes-list">
+            </div>
+
+        <div class="pagination-controls" id="pagination-controls">
+            <button id="prev-btn" disabled>Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-btn" disabled>Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
